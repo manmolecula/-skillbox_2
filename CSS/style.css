@@ -71,6 +71,38 @@ body{
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 32px 32px;
 }
+.header__menu{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 420px;
+    background-color: #fff;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-101%);
+    padding-left: 50px;
+    padding-top: 38px;
+}
+.header__burger-link,
+.header__menu-img{
+    cursor: pointer;
+}
+.header__menu-list{
+    margin-top: 107px;
+    font-family: "Montserrat-Bold";
+    font-size: 24px;
+    line-height: 29px;
+    color: #333;    
+}
+.header__menu-item:not(:last-child){
+    padding-bottom: 60px;
+}
+.header__menu.is-active{
+    transform: none;
+}
 .header__logo{
     padding-right: 10px;
 }
@@ -501,14 +533,14 @@ body{
     border: 1px solid #fff !important;
     background: #fff !important;
 }
-.faq__item:hover{
+.footer__link:hover{
     color: #FF9900;
 }
-.faq__item:focus{
+.footer__link:focus{
     border: 2px solid #FF9900;
     margin: -2px;
 }
-.faq__item:active{
+.footer__link:active{
     color: #E1670E;
 }
 .footer__links{
@@ -956,6 +988,21 @@ body{
         height: 69px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .header__menu{
+        padding-left: 15px;
+        padding-top: 23px;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 16px 16px;    
+    }
+    .header__menu-list{
+        margin-top: 32px;
+        width: 320px;
+        font-size: 16px;
+        line-height: 19.5px;
+    }
+    .header__menu-item:not(:last-child){
+        padding-bottom: 32px;
     }
     .header__logo_mobile{
         max-width: 110px;
