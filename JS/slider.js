@@ -18,3 +18,15 @@ const swiper = new Swiper('.swiper', {
       document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
     })
   })
+
+  document.querySelectorAll('#burger').forEach(function(burgerBtn){
+    burgerBtn.addEventListener('click', function() {
+      document.querySelector('#menu').classList.toggle('is-active')
+    })
+  })
+
+  document.querySelectorAll('.faq__item-a').forEach(function(transformBtn){
+    transformBtn.addEventListener('click', function() {
+      document.querySelector('.faq__img').classList.toggle('transform')
+      })
+    })
